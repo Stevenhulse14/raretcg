@@ -3,7 +3,7 @@ const express = require("express");
 const morgan = require("morgan");
 const api = require("./api");
 const app = express();
-const port = 3800;
+const port = 8000;
 
 // middleware
 // login middleware

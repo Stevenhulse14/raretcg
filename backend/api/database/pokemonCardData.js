@@ -1,324 +1,119 @@
 const data = [
   {
-    id: "swsh1-1",
-    name: "Rillaboom",
-    supertype: "Pokémon",
-    subtypes: ["V"],
-    hp: "220",
-    types: ["Grass"],
-    attacks: [
-      {
-        name: "Drum Beats",
-        cost: ["Grass", "Colorless"],
-        damage: "30+",
-        text: "If this Pokémon has any Grass Energy attached, this attack does 60 more damage.",
-      },
-      {
-        name: "Hammer In",
-        cost: ["Grass", "Grass", "Colorless"],
-        damage: "200",
-        text: "",
-      },
-    ],
-    weaknesses: [{ type: "Fire", value: "×2" }],
-    retreatCost: ["Colorless", "Colorless", "Colorless", "Colorless"],
-    convertedRetreatCost: 4,
-    set: {
-      id: "swsh1",
-      name: "Sword & Shield",
-      series: "Sword & Shield",
-      printedTotal: 202,
-      total: 216,
-    },
-    number: "1",
-    rarity: "Rare Holo V",
-    images: {
-      small: "https://images.pokemontcg.io/swsh1/1.png",
-      large: "https://images.pokemontcg.io/swsh1/1_hires.png",
-    },
-  },
-  {
-    id: "swsh1-2",
-    name: "Inteleon",
-    supertype: "Pokémon",
-    subtypes: ["Stage 2"],
-    hp: "220",
-    types: ["Water"],
-    evolvesFrom: "Drizzile",
-    attacks: [
-      {
-        name: "Water Guns",
-        cost: ["Water", "Colorless"],
-        damage: "30+",
-        text: "This attack does 30 more damage for each Water Energy attached to this Pokémon.",
-      },
-      {
-        name: "Shady Shot",
-        cost: ["Water", "Water", "Colorless"],
-        damage: "160",
-        text: "",
-      },
-    ],
-    weaknesses: [{ type: "Metal", value: "×2" }],
-    retreatCost: ["Colorless"],
-    convertedRetreatCost: 1,
-    set: {
-      id: "swsh1",
-      name: "Sword & Shield",
-      series: "Sword & Shield",
-      printedTotal: 202,
-      total: 216,
-    },
-    number: "2",
-    rarity: "Rare Holo V",
-    images: {
-      small: "https://images.pokemontcg.io/swsh1/2.png",
-      large: "https://images.pokemontcg.io/swsh1/2_hires.png",
-    },
-  },
-  {
-    id: "swsh1-3",
-    name: "Drednaw",
-    supertype: "Pokémon",
-    subtypes: ["Stage 1"],
-    hp: "160",
-    types: ["Water"],
-    evolvesFrom: "Chewtle",
-    attacks: [
-      {
-        name: "Bite",
-        cost: ["Water", "Colorless"],
-        damage: "60",
-        text: "",
-      },
-      {
-        name: "Armor Hammer",
-        cost: ["Water", "Water", "Colorless"],
-        damage: "120",
-        text: "During your opponent’s next turn, this Pokémon takes 60 less damage from attacks (after applying Weakness and Resistance).",
-      },
-    ],
-    weaknesses: [{ type: "Lightning", value: "×2" }],
-    retreatCost: ["Colorless", "Colorless", "Colorless"],
-    convertedRetreatCost: 3,
-    set: {
-      id: "swsh1",
-      name: "Sword & Shield",
-      series: "Sword & Shield",
-      printedTotal: 202,
-      total: 216,
-    },
-    number: "3",
-    rarity: "Rare",
-    images: {
-      small: "https://images.pokemontcg.io/swsh1/3.png",
-      large: "https://images.pokemontcg.io/swsh1/3_hires.png",
-    },
-  },
-  {
-    id: "swsh1-4",
-    name: "Arcanine",
-    supertype: "Pokémon",
-    subtypes: ["Stage 1"],
-    hp: "140",
-    types: ["Fire"],
-    evolvesFrom: "Growlithe",
-    attacks: [
-      {
-        name: "Flame Jet",
-        cost: ["Fire", "Colorless"],
-        damage: "80",
-        text: "",
-      },
-      {
-        name: "Majestic Flame",
-        cost: ["Fire", "Fire", "Colorless", "Colorless"],
-        damage: "180",
-        text: "Discard all Fire Energy from this Pokémon.",
-      },
-    ],
-    weaknesses: [{ type: "Water", value: "×2" }],
-    retreatCost: ["Colorless", "Colorless"],
-    convertedRetreatCost: 2,
-    set: {
-      id: "swsh1",
-      name: "Sword & Shield",
-      series: "Sword & Shield",
-      printedTotal: 202,
-      total: 216,
-    },
-    number: "4",
-    rarity: "Rare Holo",
-    images: {
-      small: "https://images.pokemontcg.io/swsh1/4.png",
-      large: "https://images.pokemontcg.io/swsh1/4_hires.png",
-    },
-  },
-  {
-    id: "swsh1-5",
-    name: "Blacephalon V",
-    supertype: "Pokémon",
-    subtypes: ["V"],
-    hp: "200",
-    types: ["Fire"],
-    attacks: [
-      {
-        name: "Bursting Burn",
-        cost: ["Fire", "Fire", "Colorless"],
-        damage: "30×",
-        text: "Discard as many Fire Energy from this Pokémon as you like. This attack does 30 damage for each card discarded in this way.",
-      },
-      {
-        name: "Thermal Flare",
-        cost: ["Fire", "Fire", "Fire", "Colorless"],
-        damage: "230",
-        text: "",
-      },
-    ],
-    weaknesses: [{ type: "Water", value: "×2" }],
-    retreatCost: [
-      "Colorless",
-      "Colorless",
-      "Colorless",
-      "Colorless",
-      "Colorless",
-    ],
-    convertedRetreatCost: 5,
-    set: {
-      id: "swsh1",
-      name: "Sword & Shield",
-      series: "Sword & Shield",
-      printedTotal: 202,
-      total: 216,
-    },
-    number: "5",
-    rarity: "Rare Ultra",
-    images: {
-      small: "https://images.pokemontcg.io/swsh1/5.png",
-      large: "https://images.pokemontcg.io/swsh1/5_hires.png",
-    },
-  },
-  {
-    id: "swsh1-6",
-    name: "Cramorant",
-    supertype: "Pokémon",
-    subtypes: ["Stage 1"],
-    hp: "120",
-    types: ["Water"],
-    evolvesFrom: "Arrokuda",
-    attacks: [
-      {
-        name: "Wave Splash",
-        cost: ["Water"],
-        damage: "30",
-        text: "",
-      },
-      {
-        name: "Big Beak",
-        cost: ["Water", "Colorless", "Colorless"],
-        damage: "90",
-        text: "You may discard a Pokémon Tool attached to your opponent’s Active Pokémon.",
-      },
-    ],
-    weaknesses: [{ type: "Lightning", value: "×2" }],
-    retreatCost: ["Colorless", "Colorless", "Colorless"],
-    convertedRetreatCost: 3,
-    set: {
-      id: "swsh1",
-      name: "Sword & Shield",
-      series: "Sword & Shield",
-      printedTotal: 202,
-      total: 216,
-    },
-    number: "6",
-    rarity: "Uncommon",
-    images: {
-      small: "https://images.pokemontcg.io/swsh1/6.png",
-      large: "https://images.pokemontcg.io/swsh1/6_hires.png",
-    },
-  },
-  {
-    id: "swsh1-7",
-    name: "Marnie",
-    supertype: "Trainer",
-    subtypes: ["Supporter"],
-    rules: [
-      "Each player shuffles their hand and puts it at the bottom of their deck. Then each player draws 4 cards.",
-    ],
-    set: {
-      id: "swsh1",
-      name: "Sword & Shield",
-      series: "Sword & Shield",
-      printedTotal: 202,
-      total: 216,
-    },
-    number: "7",
-    rarity: "Rare Holo",
-    images: {
-      small: "https://images.pokemontcg.io/swsh1/7.png",
-      large: "https://images.pokemontcg.io/swsh1/7_hires.png",
-    },
-  },
-  {
-    id: "swsh1-8",
-    name: "Professor’s Research",
-    supertype: "Trainer",
-    subtypes: ["Supporter"],
-    rules: ["Discard your hand and draw 7 cards."],
-    set: {
-      id: "swsh1",
-      name: "Sword & Shield",
-      series: "Sword & Shield",
-      printedTotal: 202,
-      total: 216,
-    },
-    number: "8",
-    rarity: "Uncommon",
-    images: {
-      small: "https://images.pokemontcg.io/swsh1/8.png",
-      large: "https://images.pokemontcg.io/swsh1/8_hires.png",
-    },
-  },
-  {
-    id: "swsh1-9",
-    name: "Fire Energy",
-    supertype: "Energy",
-    subtypes: ["Basic"],
-    rules: ["Provides Fire Energy."],
-    set: {
-      id: "swsh1",
-      name: "Sword & Shield",
-      series: "Sword & Shield",
-      printedTotal: 202,
-      total: 216,
-    },
-    number: "9",
+    id: 1,
+    name: "Pikachu",
+    type: "Electric",
+    hp: 60,
     rarity: "Common",
-    images: {
-      small: "https://images.pokemontcg.io/swsh1/9.png",
-      large: "https://images.pokemontcg.io/swsh1/9_hires.png",
-    },
+    attack: [
+      {
+        name: "Thunder Shock",
+        damage: 20,
+        description: "Flip a coin. If heads, the opponent’s Active Pokémon is now Paralyzed."
+      },
+      {
+        name: "Quick Attack",
+        damage: "10+",
+        description: "Flip a coin. If heads, this attack does 10 more damage."
+      }
+    ],
+    weaknesses: ["Ground"],
+    resistances: ["Flying", "Steel"],
+    retreatCost: 1,
+    imageUrl: "/images/pikachu.png"
   },
   {
-    id: "swsh1-10",
-    name: "Water Energy",
-    supertype: "Energy",
-    subtypes: ["Basic"],
-    rules: ["Provides Water Energy."],
-    set: {
-      id: "swsh1",
-      name: "Sword & Shield",
-      series: "Sword & Shield",
-      printedTotal: 202,
-      total: 216,
-    },
-    number: "10",
+    id: 2,
+    name: "Charmander",
+    type: "Fire",
+    hp: 50,
     rarity: "Common",
-    images: {
-      small: "https://images.pokemontcg.io/swsh1/10.png",
-      large: "https://images.pokemontcg.io/swsh1/10_hires.png",
-    },
+    attack: [
+      {
+        name: "Scratch",
+        damage: 10,
+        description: "A basic physical attack."
+      },
+      {
+        name: "Ember",
+        damage: 30,
+        description: "Discard a Fire Energy attached to this Pokémon."
+      }
+    ],
+    weaknesses: ["Water"],
+    resistances: [],
+    retreatCost: 1,
+    imageUrl: "/images/charmander.png"
   },
+  {
+    id: 3,
+    name: "Bulbasaur",
+    type: "Grass",
+    hp: 60,
+    rarity: "Common",
+    attack: [
+      {
+        name: "Vine Whip",
+        damage: 20,
+        description: "Whips the opponent with vines."
+      },
+      {
+        name: "Seed Bomb",
+        damage: 30,
+        description: "Fires explosive seeds at the opponent."
+      }
+    ],
+    weaknesses: ["Fire", "Flying"],
+    resistances: ["Water"],
+    retreatCost: 1,
+    imageUrl: "/images/bulbasaur.png"
+  },
+  {
+    id: 4,
+    name: "Squirtle",
+    type: "Water",
+    hp: 50,
+    rarity: "Common",
+    attack: [
+      {
+        name: "Bubble",
+        damage: 10,
+        description: "Flip a coin. If heads, the opponent’s Active Pokémon is now Paralyzed."
+      },
+      {
+        name: "Water Gun",
+        damage: 30,
+        description: "A stream of pressurized water hits the opponent."
+      }
+    ],
+    weaknesses: ["Electric", "Grass"],
+    resistances: [],
+    retreatCost: 1,
+    imageUrl: "/images/squirtle.png"
+  },
+  {
+    id: 5,
+    name: "Mewtwo",
+    type: "Psychic",
+    hp: 130,
+    rarity: "Legendary",
+    attack: [
+      {
+        name: "Psychic",
+        damage: 50,
+        description: "Does 10 more damage for each Energy attached to your opponent’s Active Pokémon."
+      },
+      {
+        name: "Barrier",
+        damage: 0,
+        description: "During your opponent’s next turn, prevent all effects of attacks done to Mewtwo."
+      }
+    ],
+    weaknesses: ["Dark"],
+    resistances: ["Fighting"],
+    retreatCost: 2,
+    imageUrl: "/images/mewtwo.png"
+  }
 ];
 
 module.exports = data;
