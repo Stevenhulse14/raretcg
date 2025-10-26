@@ -13,16 +13,16 @@ router.get("/:id", (req, res) => {
 });
 
 router.post("/", (req, res) => {
-  data.push(req.body)
-  res.json({ message: `${cardId}` });
+  data.push(req.body);
+  res.json({ message: `${req.body.id}` });
 });
 
 router.put("/:id", (req, res) => {
   const cardId = req.params.id;
-  for (let i=0; i < data.length; i++) {
+  for (let i = 0; i < data.length; i++) {
     if (data[i].id == cardId) {
-      req.body.id = i+1
-      data[i] = req.body
+      req.body.id = i + 1;
+      data[i] = req.body;
     }
   }
   res.json({ message: `${cardId}` });
@@ -30,9 +30,9 @@ router.put("/:id", (req, res) => {
 
 router.delete("/:id", (req, res) => {
   const cardId = req.params.id;
-  for (let i=0; i < data.length; i++) {
+  for (let i = 0; i < data.length; i++) {
     if (data[i].id == cardId) {
-      data.splice(i,1)
+      data.splice(i, 1);
     }
   }
   res.json({ message: `${cardId}` });
