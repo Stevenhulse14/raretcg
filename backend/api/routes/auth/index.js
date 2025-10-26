@@ -1,8 +1,9 @@
 const express = require("express");
-const routes = require("./routes");
 
 const router = express.Router();
 
-router.use("/", routes);
+router.get("/login", (req, res) => {
+  res.json({ message: "Logging In" });
+});
 
 module.exports = router;
